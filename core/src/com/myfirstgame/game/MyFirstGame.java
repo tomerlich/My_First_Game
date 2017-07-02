@@ -11,6 +11,7 @@ import com.myfirstgame.game.States.MenuState;
 public class MyFirstGame extends ApplicationAdapter {
 	public static final int WIDTH = 480;
     public static final int HEIGHT = 800;
+	public static final String  TITLE = "My First Game";
     public static final float SCALE = 0.5f;
 
     private SpriteBatch spriteBatch;
@@ -21,7 +22,6 @@ public class MyFirstGame extends ApplicationAdapter {
 		spriteBatch = new SpriteBatch();
         gameStateManager = new GameStateManager();
         gameStateManager.push(new MenuState(gameStateManager));
-
         Gdx.gl.glClearColor(1, 0, 0, 1);
     }
 
